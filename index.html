@@ -195,16 +195,54 @@
 
                 </p>
                 <p>
-                    <b>URL</b> definuje doménovou adresu serveru, umístění zdroje na serveru a protokol, kterým je možné zdroj zpřístupnit.
+                    <b>URL</b> definuje doménovou adresu serveru, umístění zdroje na serveru a protokol, kterým je možné
+                    zdroj zpřístupnit.
                     <br>
                     <em>Přílad pro WWW stránku:</em>
                     <br>
-                    <li><b>https://www.youtube.com/watch?v=fWNaR-rxAic&ab_channel=CarlyRaeJepsenVEVO</b></li> 
+                    <li><b>https://www.youtube.com/watch?v=fWNaR-rxAic&ab_channel=CarlyRaeJepsenVEVO</b></li>
                     <li><b>https://github.com/KubaMrazek/WWW</b></li>
                     <li><b>https://www.w3schools.com/css/default.asp</b></li>
                     <li><b>https://www.sspu-opava.cz/cs/</b></li>
                     <li><b>http://go4lube.eu/</b></li>
                 </p>
+            </div>
+            <h3><b>Cookies</b></h3>
+            <div class="otazky">8.Co jsou a k čemu slouží tzv. cookies? Připojte obrázek ukazující uložená cookies k
+                některé internetové stránce.</div>
+            <div class="odpovedi">
+                <p>
+                    <b>Cookie</b> se v protokolu <em>HTTP</em> označuje malé množství dat,
+                    která <em>WWW</em> server pošle prohlížeči a ten je uloží na počítači uživatele. Při každé další
+                    návštěvě
+                    téhož serveru pak prohlížeč tato data posílá zpět serveru.
+                    <br>
+                    <b>Cookies</b> běžně slouží k rozlišování jednotlivých uživatelů, ukládá se do nich obsah „nákupního
+                    košíku“ v elektronických obchodech, uživatelské předvolby apod.
+
+                </p>
+                <p>
+                    Funkce cookies je definována pomocí <em>HTTP</em> hlavičky <b>Set-Cookie</b>, která bývá posílána v
+                    odpovědi serveru
+                    a obsahuje jednak data cookie (omezená prohlížečem, vyžadována je podpora alespoň pro 4096 byte),
+                    jednak informace o době platnosti, adresář na serveru, pro který cookie platí apod.
+                    <br>
+                    Pokud má prohlížeč alespoň jednu <b>cookie</b> pro daný server (a daný adresář na něm), posílá s
+                    každým
+                    dotazem danému serveru i <b>hlavičku cookie</b>, která obsahuje stejná data, která server původně
+                    poslal.
+                </p>
+                <p><b>Cookie</b> mohou být nebezpečné pro ochranu soukromí. Navštívený web si totiž může ukládat do cookies
+                    jakékoliv informace, které o návštěvníkovi shromáždí. Těchto informací se dá posléze i proti vůli
+                    návštěvníka zneužívat pro cílenou reklamu, statistické vyhodnocování chování návštěvníků apod.
+                    <br>
+                    <b>Únos spojení</b> (anglicky - <em>session hijacking or cookie hijacking</em>) je v informatice označení
+                    počítačového útoku, který zneužívá <em>HTTP</em> cookie odcizené oběti útoku pro získání neoprávněného
+                    přístupu k informacím nebo službám poskytovaným webovým serverem. Protože jsou cookie v takovém
+                    případě vlastně autentizační data (tzv. <b>„magic cookie“</b>), může se po jejich odcizení útočník vůči
+                    serveru vydávat za oběť (a server to nemusí poznat).
+                </p>
+                <img src="imgs/cookies.png" alt="cookies na internetové stránce (staženo z internetu)">
             </div>
             <h3>Internetový vyhledávač</h3>
             <div class="otazky">9. Vypište přehledně jednotlivé fáze fungování internetových vyhledávačů.

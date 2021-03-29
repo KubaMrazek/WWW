@@ -1,0 +1,57 @@
+u.dotted {
+    text-decoration: underline;
+    text-decoration-style:dotted;
+}
+h1{
+    background-color:cadetblue;
+    padding: 40px;
+    text-align: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    
+}
+section{
+    padding-left:150px;
+    padding-right: 150px;
+}
+li{
+    padding-left: 30px;
+}
+.otazky {
+    background-color:lightgrey;
+    padding: 20px;
+    font-size: 20px;
+}
+.odpovedi {
+    border-left: 10px solid grey;
+    padding-left: 20px;
+}
+li {
+    padding-left: 80px;
+}
+caption {
+    font-size: 1.2em;
+    background-color: rgb(16, 14, 116);
+    color: white;
+    padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    padding: 5px 50px;
+}
+th {
+    background-color: darkslategrey;
+    color: white;
+    padding:5px 50px;
+}
+.cervena {
+    background-color: darkred;
+    color: white;
+}
+ol#cislovani {
+    list-style-type: upper-roman;
+}

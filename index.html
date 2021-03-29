@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>World Wide Web</h1>
+    </head>
+    <main>
+        <section>
+            <h2>Vznik WWW a principy</h2>
+            <p><b>World Wide Web</b> (<em>také pouze zkráceně web</em>), ve volném překladu <em>„celosvětová
+                    pavučina“</em>, je označení pro
+                aplikace internetového protokolu <u class="dotted">HTTP</u> . Je tím myšlena soustava propojených
+                hypertextových dokumentů.
+                Služba se zrodila se v roce 1989 v evropském vědeckém centru <u class="dotted">CERN</u> v Ženevě díky
+                <b>Timu Berners-Lee</b>.
+            </p>
+            <p>Za <b>hypertext</b> označujeme takový text, který obsahuje propojení na jiné texty pomocí tzv.
+                hypertextových
+                odkazů. Ve službě <em>WWW</em> jsou realizovány jako tzv. <u class="dotted">URL</u> odkazy. Služba je
+                založena na spolupráci <em>WWW</em>
+                klientů (browserů) s <em>WWW</em> serverem. Prvním komerčním prohlížečem webových stránek byl na počátku
+                90. let
+                minulého století <b>Mosaic</b>.</p>
+            <p>Při jejich spolupráci fungují následující mechanismy:</p>
+            <li>komunikační protokol <u class="dotted">HTTP</u>, pomocí něhož <em>WWW</em> klient a <em>WWW</em> server
+                komunikují,</li>
+            <li>jazyk <u class="dotted">HTML</u>, definující formát <em>WWW</em> stránek, které server vrací klientovi.
+            </li>
+            <p>
+                <b>W3C</b> je mezinárodní konsorcium jehož členové společně s veřejností vyvíjejí webové standardy pro
+                <em>WWW</em>.
+                Konsorciu předsedá <b>Tim Berners-Lee</b>.
+            </p>
+            <h2><b>WWW - otázky a odpovědi</b></h2>
+            <h3><b>Webový server</b></h3>
+            <div class="otazky"> 1. Jakou roli plní webový server? Uveďte příklady webových serverů.</div>
+            <div class="odpovedi">
+                <p>Server je <b>bezobslužný program</b>, který přijímá a obsluhuje požadavky klientů. Webový
+                    server je připojen k počítačové síti a přijímá požadavky v souladu s protokolem <em>HTTP</em> (HTTP
+                    Request).
+                    Tyto požadavky vyřizuje a počítači, který požadavek vznesl, vrací odpověď.
+                    <br>
+                    <br>
+                    <b>Příklady webových serverů</b>
+                    <br>
+                    <li class="border">Apache</li>
+                    <li>NGINX</li>
+                    <li>Microsoft Internet Information Server</li>
+                </p>
+            </div>
+            <h3><b>Stavové kódy HTTP</b></h3>
+            <div class="otazky">5. Vypište do tabulky stavové kódy HTTP.
+            </div>
+            <div class="odpovedi">
+                <table>
+                    <caption>Stavové kód odpovědi serveru</caption>
+                    <tbody>
+                        <tr>
+                            <th>Kód</th>
+                            <th>Typ zprávy</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>informační zpráva</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>informační zpráva</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>informační zpráva</td>
+                        </tr>
+                        <tr class="cervena">
+                            <td>4.</td>
+                            <td>informační zpráva</td>
+                        </tr>
+                        <tr class="cervena">
+                            <td>5.</td>
+                            <td>informační zpráva</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>Internetový vyhledávač</h3>
+            <div class="otazky">9. Vypište přehledně jednotlivé fáze fungování internetových vyhledávačů.
+            </div>
+            <div class="odpovedi">
+                <ol id="cislovani">
+                    <li>
+                        Prohledání webových stránek. Pro prohledání webových stránek má internetový vyhledávač
+                        automatický program, tzv. vyhledávací robot (crawler, bot, nebo též spider – „pavouk“), který
+                        prochází celý webový prostor. Robot dostane na začátku seznam atraktivních vstupních míst
+                        (odkazů), jejichž obsah si přečte, uloží do databáze a zapamatuje si navštívenou adresu odkazu,
+                        aby se na ni již podruhé nevracel. Z obsahu stažené stránky vybere seznam všech obsažených
+                        odkazů a opět všechny odkazy navštíví. Cyklus návštěvy, sesbírání odkazů a dalších návštěv se
+                        stále opakuje. Robot se na navštívené stránky vrací v pravidelných intervalech, aby zjistil, zda
+                        se na stránce neobjevily nějaké nové informace. Z principu práce vyhledávače vyplývá, že nikdy
+                        nemá úplně aktuální informace, ale prezentuje je se zpožděním.</li>
+                    <li>Indexování. Databázi obsahující uložené obsahy navštívených stránek je potřeba indexovat, aby
+                        bylo možné podle zadaných slov co nejrychleji najít adresy stránek, které je obsahují. Zároveň
+                        je nutné vystavět index tak, aby poskytoval na prvních místech stránky s nejvyšší užitnou
+                        hodnotou (relevancí, mající nejvyšší hodnocení kvality, nejvyšší váhu). Pro výpočet relevance se
+                        používají nejrůznější algoritmy, které jsou založeny na nejrůznějších znacích stránek a různých
+                        úhlech analýzy jejich obsahu:
+                        <ul>
+                            <li>Váha slov. Stránka má vyšší hodnocení, když má hledané slovo na stránce vyšší váhu. Váha
+                                slov se zvyšuje, je-li slovo v titulku stránky, nadpisu nebo blíže k začátku stránky,
+                                případně se na stránce opakuje. Váhu slov lze zneužít vkládáním atraktivních slov do
+                                obsahu stránky bez ohledu na její skutečný obsah nebo prostým opakováním slov.
+                                Vyhledávač se brání penalizací (snížením kvality) podezřelých stránek.</li>
+                            <li>Atraktivita stránky. Stránka má vyšší hodnocení, když na ni odkazuje více jiných
+                                stránek, protože zřejmě obsahuje zajímavé informace. Atraktivitu lze zneužít vytvářením
+                                falešných stránek, které odkazují na stránku, která má získat vyšší hodnocení.
+                                Vyhledávač se brání sledováním podezřelého náhlého hromadění odkazů.</li>
+                        </ul>
+                    </li>
+                    <li>Vyhledávání. Databáze a její index se zpřístupní na vstupní stránce vyhledávače. Uživatel získá
+                        po zadání hledaných slov seznam adres, na kterých robot hledaná slova našel. Pro vyšší
+                        přehlednost se zobrazuje kromě odkazu ještě titulek stránky, a okolí nalezených slov.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; 2021 - IT1 Jakub Mrázek</p>
+    </footer>
+</body>
+
+</html>

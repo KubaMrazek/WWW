@@ -123,7 +123,8 @@
                         metoda
                         <b>PATCH</b>.
                     </li>
-                    <li><b>DELETE</b> - Požadavek na zrušení dokumentu (nebo záznamu v databázi) na serveru. Rušený dokument je
+                    <li><b>DELETE</b> - Požadavek na zrušení dokumentu (nebo záznamu v databázi) na serveru. Rušený
+                        dokument je
                         specifikován v <em>URL</em>.
                     </li>
                 </p>
@@ -164,7 +165,27 @@
             </div>
             <h3><b>HTTPS</b></h3>
             <div class="otazky">6.Proč se stále častěji využívá protokol HTTPS?</div>
-            <div class="odpovedi"></div>
+            <div class="odpovedi">
+                <p>
+                    <b>HTTPS</b> (<em>Hypertext Transfer Protocol Secure</em> = HTTP se zabezpečením) je nadstavba
+                    protokolu <b>HTTP</b>, která
+                    poskytuje zvýšenou bezpečnost před odposloucháváním či podvržením dat. Standardní port na straně
+                    serveru je <b>443 TCP</b>.
+                    <b>HTTPS</b> není speciální protokol, protože data jsou přenášena pomocí klasického <em>HTTP</em>:
+                    nejsou však
+                    přenášena v běžném textu, ale šifrována pomocí <b>SSL</b> nebo <b>TLS</b> (speciální vrstva vložená
+                    mezi vrstvu
+                    transportní a aplikační), což zaručuje ochranu proti útokům.
+
+                </p>
+                <p>K výhodám <b>HTTPS</b> patří možnost ověření identity, důvěrnost přenášených dat a integrita obsahu;
+                    cenou za to je mírně složitější konfigurace webového serveru a potřeba udržování certifikátu.
+                    <li><b>Certifikát</b> - musí být podepsán tzv. <b>certifikační autoritou</b>, která zaručí, že
+                        vlastník certifikátu se nevydává za nikoho jiného. Webové prohlížeče jsou většinou vybaveny
+                        podpisovými certifikáty největších podpisových autorit.
+                    </li>
+                </p>
+            </div>
             <h3>Internetový vyhledávač</h3>
             <div class="otazky">9. Vypište přehledně jednotlivé fáze fungování internetových vyhledávačů.
             </div>

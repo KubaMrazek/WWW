@@ -95,7 +95,37 @@
                     charakteru požadavek – odpověď. Žádosti mají formu jednoduchých příkazů a mohou být upřesňovány
                     pomocí různých parametrů, tzv. <b>hlaviček</b>.
                 </p>
-                <p>Odpovědi mají číselný charakter a nejčastěji obsahují i <em>WWW</em> stránku, kterou klient požadoval.
+                <p>Odpovědi mají číselný charakter a nejčastěji obsahují i <em>WWW</em> stránku, kterou klient
+                    požadoval.
+                </p>
+                <p>Protokol <em>HTTP</em> definuje několik metod, které se mají provést nad uvedeným objektem
+                    (dokumentem).
+                    Metoda se uvádí velkými písmeny a určuje druh služby, kterou klient od serveru požaduje.
+                </p>
+                <p>K nejčastěji používaným metodám patří:
+                    <li><b>GET</b> - Představuje požadavek na poslání dokumentu určeného pomocí <em>URL</em>. Typicky se
+                        metoda
+                        <b>GET</b> používá v situacích, kdy nedochází ke změně dat na serveru.
+                    </li>
+                    <li><b>HEAD</b> - Je identická s metodou <em>GET</em>, server však nemusí posílat tělo odpovědi.
+                        Metodu je možné použít k získání doplňkových informací o dokumentu, často se používá k testování
+                        hypertextových linek, jejich dostupnosti a poslední modifikace. Klient může získané hlavičky
+                        analyzovat a případně požádat o data novým dotazem GET (např. test zda dokument není příliš
+                        dlouhý).
+                    </li>
+                    <li><b>POST</b> - Používá se v případě, kdy má cílový server přijmout data z požadavku. Výsledkem
+                        POST metody může být poslání mailu, předání dat do procesu, který data zpracuje, rozšíření
+                        databáze. Posílaná data nejsou nijak omezená a je možné v hlavičkách tělo zprávy popsat.
+                    </li>
+                    <li><b>PUT</b> - Představuje požadavek na uložení posílaných dat pod specifikovaným <em>URL</em> na
+                        server.
+                        Zpravidla se využívá k aktualizaci záznamů v databázi. Alternativou k metodě <b>PUT</b> bývá
+                        metoda
+                        <b>PATCH</b>.
+                    </li>
+                    <li><b>DELETE</b> - Požadavek na zrušení dokumentu (nebo záznamu v databázi) na serveru. Rušený dokument je
+                        specifikován v <em>URL</em>.
+                    </li>
                 </p>
             </div>
             <h3><b>Stavové kódy HTTP</b></h3>
@@ -133,7 +163,7 @@
                 </table>
             </div>
             <h3><b>HTTPS</b></h3>
-            <div class="otazky">Proč se stále častěji využívá protokol HTTPS?</div>
+            <div class="otazky">6.Proč se stále častěji využívá protokol HTTPS?</div>
             <div class="odpovedi"></div>
             <h3>Internetový vyhledávač</h3>
             <div class="otazky">9. Vypište přehledně jednotlivé fáze fungování internetových vyhledávačů.
